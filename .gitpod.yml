@@ -4,8 +4,8 @@ tasks:
   - init: >
       mkdir -p /home/gitpod/.config/nix &&
       echo 'sandbox = false' >> /home/gitpod/.config/nix/nix.conf &&
-      nix-shell --run whoami
-  - command: nix-shell
+      echo 'use nix' > .envrc &&
+      direnv allow .
 github:
   prebuilds:
     master: true
