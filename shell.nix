@@ -7,5 +7,6 @@ pkgs.mkShell {
         nixfmt 
         terraform terragrunt awscli2 
         fd ripgrep rage
+        nodejs yarn
     ];
 }
