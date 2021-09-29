@@ -3,5 +3,9 @@ let
     pkgs = import sources.nixpkgs {};
 in
 pkgs.mkShell {
-    buildInputs = with pkgs; [ nixfmt terraform terragrunt fd ripgrep awscli2];
+    buildInputs = with pkgs; [ 
+        nixfmt 
+        terraform terragrunt awscli2 
+        fd ripgrep rage
+    ];
 }
