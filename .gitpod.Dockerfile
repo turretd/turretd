@@ -21,6 +21,10 @@ RUN touch .bash_profile \
 RUN echo '. /home/gitpod/.nix-profile/etc/profile.d/nix.sh' >> /home/gitpod/.bashrc
 RUN mkdir -p /home/gitpod/.config/nixpkgs && echo '{ allowUnfree = true; }' >> /home/gitpod/.config/nixpkgs/config.nix
 
+RUN . /home/gitpod/.nix-profile/etc/profile.d/nix.sh \
+  && nix-env -iA cachix -f https://cachix.org/api/v1/install \
+  && cachix use cachix
+
 # Install git
 RUN . /home/gitpod/.nix-profile/etc/profile.d/nix.sh \
   && nix-env -i git git-lfs

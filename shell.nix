@@ -4,9 +4,13 @@ let
 in
 pkgs.mkShell {
     buildInputs = with pkgs; [ 
-        nixfmt 
+        nixfmt niv
         terraform terragrunt awscli2 
         fd ripgrep rage
         nodejs yarn
     ];
+    shellHook = ''
+        export PATH="$PWD/bin:$PATH"
+        export NIX_CONF_DIR="$PWD"
+    '';
 }
