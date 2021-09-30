@@ -10,6 +10,7 @@ pkgs.mkShell {
         nodejs yarn
     ];
     shellHook = ''
+        export DIRENV_LOG_FORMAT=
         export PATH="$PWD/bin:$PATH"
         export NIX_CONF_DIR="$PWD"
     '';
