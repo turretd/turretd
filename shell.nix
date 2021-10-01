@@ -6,7 +6,7 @@ pkgs.mkShell {
     buildInputs = with pkgs; [ 
         nixfmt niv
         terraform terragrunt awscli2 
-        fd ripgrep rage
+        fd ripgrep rage sops entr gnumake
         nodejs yarn
     ];
     shellHook = ''
