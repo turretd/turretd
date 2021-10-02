@@ -11,6 +11,18 @@
         "url": "https://github.com/nmattia/niv/archive/65a61b147f307d24bfd0a5cd56ce7d7b7cc61d2e.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
+    "nixos-shell": {
+        "branch": "master",
+        "description": "Spawns lightweight nixos vms in a shell",
+        "homepage": "",
+        "owner": "Mic92",
+        "repo": "nixos-shell",
+        "rev": "da5d52169d4e387a048458b5044396a59bba588e",
+        "sha256": "0kw0i384jcsgwjqscvr08igxh0010jwd6sw7hhbw1cfczqk4jwvb",
+        "type": "tarball",
+        "url": "https://github.com/Mic92/nixos-shell/archive/da5d52169d4e387a048458b5044396a59bba588e.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
     "nixpkgs": {
         "branch": "nixos-21.05",
         "description": "Nix Packages collection",
