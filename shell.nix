@@ -7,7 +7,7 @@ in
 pkgs.mkShell {
     buildInputs = with pkgs; [ 
         nixfmt niv nixos-shell nixos-generators
-        terraform terragrunt awscli2 
+        terraform terragrunt awscli2 docker
         fd ripgrep rage sops entr gnumake
         nodejs yarn
     ];
