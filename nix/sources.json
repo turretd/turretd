@@ -11,6 +11,18 @@
         "url": "https://github.com/nmattia/niv/archive/65a61b147f307d24bfd0a5cd56ce7d7b7cc61d2e.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
+    "nixos-generators": {
+        "branch": "master",
+        "description": "Collection of image builders [maintainer=@Lassulus]",
+        "homepage": "",
+        "owner": "nix-community",
+        "repo": "nixos-generators",
+        "rev": "5f215d70a2f1b8bc58a48ecea1f0d025450f3ae3",
+        "sha256": "1l4ryvnw7y8f986kzhnh0x7rcm9j2nlsrimkf6fm1vm9wdqlfkd4",
+        "type": "tarball",
+        "url": "https://github.com/nix-community/nixos-generators/archive/5f215d70a2f1b8bc58a48ecea1f0d025450f3ae3.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
     "nixos-shell": {
         "branch": "master",
         "description": "Spawns lightweight nixos vms in a shell",

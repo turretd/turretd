@@ -2,10 +2,11 @@ let
     sources = import ./nix/sources.nix;
     pkgs = import sources.nixpkgs {};
     nixos-shell = import sources.nixos-shell {};
+    nixos-generators = import sources.nixos-generators;
 in
 pkgs.mkShell {
     buildInputs = with pkgs; [ 
-        nixfmt niv nixos-shell
+        nixfmt niv nixos-shell nixos-generators
         terraform terragrunt awscli2 
         fd ripgrep rage sops entr gnumake
         nodejs yarn
