@@ -8,9 +8,10 @@ in
 pkgs.mkShell {
     buildInputs = with pkgs; [ 
         nixfmt niv nixos-shell nixos-generators
-        terraform terragrunt awscli2 docker
+        terraform terragrunt awscli2 docker kubectl
         fd ripgrep rage sops entr gnumake
-        nodejs yarn tools.friend
+        nodejs yarn  
+        tools.friend tools.build-containers
     ];
     shellHook = ''
         export DIRENV_LOG_FORMAT=
