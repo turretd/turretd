@@ -1,13 +1,11 @@
-{ sources ? import ../../nix/sources.nix , pkgs ? import sources.nixpkgs {} }:
+{ sources ? import ../../nix/sources.nix , pkgs ? import sources.nixpkgs {}, npmlock2nix ? import sources.npmlock2nix {} }:
 let 
     src = sources.cryptid;
-    crypt_code = pkgs.stdenv.mkDerivation {
+in
+npmlock2nix.build {
     pname = "cryptid";
     version = "unknown";
     src = src;
-    installPhase = ''
-        cp -r $src $out
-    '';
-};
-in
-crypt_code
+    installPhase = "cp -r dist $out";
+    buildCommands = [ "npx webpack build" ];
+}
