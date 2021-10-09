@@ -1,4 +1,16 @@
 {
+    "cryptid": {
+        "branch": "master",
+        "description": "Challenge game",
+        "homepage": null,
+        "owner": "ChronosOutOfTime",
+        "repo": "Cryptid",
+        "rev": "33df827c592e1075728d87f739069e46cac73a87",
+        "sha256": "08j0dgmrjh7m9ykjlz4z8x0p523s77csks842dz62h00qm2mdrh8",
+        "type": "tarball",
+        "url": "https://github.com/ChronosOutOfTime/Cryptid/archive/33df827c592e1075728d87f739069e46cac73a87.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
     "niv": {
         "branch": "master",
         "description": "Easy dependency management for Nix projects",
