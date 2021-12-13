@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node src",
-    "check": "tsc"
+    "check": "tsc",
+    "db": "touch prisma/dev.db && yarn prisma migrate dev"
   },
   "dependencies": {
     "@prisma/client": "3.6.0",

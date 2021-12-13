@@ -1,10 +1,12 @@
 import express from 'express'
+import { PrismaClient } from '@prisma/client'
+
+const prisma = new PrismaClient()
 
 const app = express()
-const port = 3000
 
-app.get('/', (req: any, res: { send: (arg0: string) => void }) => {
-  res.send('Hello World!')
+app.get('/', async (req: any, res: { send: (arg0: string) => void }) => {
+  return prisma.user.findMany()
 })
 
 export default app
