@@ -48,15 +48,15 @@
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "nixpkgs": {
-        "branch": "nixos-21.05",
+        "branch": "nixos-21.11",
         "description": "Nix Packages collection",
         "homepage": "",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "fd8a7fd07da0f3fc0e27575891f45c2f88e5dd44",
-        "sha256": "076d2r9bm8jkbjs3viaw9mcq177jparxfqsmihj14gx0xynz24kx",
+        "rev": "573095944e7c1d58d30fc679c81af63668b54056",
+        "sha256": "07s5cwhskqvy82b4rld9b14ljc0013pig23i3jx3l3f957rk95pg",
         "type": "tarball",
-        "url": "https://github.com/NixOS/nixpkgs/archive/fd8a7fd07da0f3fc0e27575891f45c2f88e5dd44.tar.gz",
+        "url": "https://github.com/NixOS/nixpkgs/archive/573095944e7c1d58d30fc679c81af63668b54056.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "npmlock2nix": {

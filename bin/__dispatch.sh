@@ -17,7 +17,13 @@ case "${TARGET_TOOL}" in
     attr="tools.yarn"
     ;;
   node)
-    attr="tools.yynode"
+    attr="tools.node"
+    ;;
+  niv)
+    attr="tools.niv"
+    ;;
+  colmena)
+    attr="tools.colmena"
     ;;
   *)
     echo "The tool '${TARGET_TOOL}' is currently not installed in this repository."
