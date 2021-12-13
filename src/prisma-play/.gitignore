@@ -1,5 +1,3 @@
-nixos.qcow2
 node_modules
-result
 dev.db
 dev.db-journal
